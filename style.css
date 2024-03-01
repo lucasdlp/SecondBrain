@@ -1,0 +1,24 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #0f0007;
+    --background: #fffafd;
+    --primary: #fb1891;
+    --secondary: #fdb872;
+    --accent: #fcda40;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #fff0f7;
+    --background: #050003;
+    --primary: #e7047d;
+    --secondary: #8d4702;
+    --accent: #bf9c03;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
