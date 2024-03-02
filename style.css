@@ -22,3 +22,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container > form {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.137);
+  display: none;
+}
