@@ -3,20 +3,31 @@ const add_task = document.querySelector(".add_task");
 const tasks_container = document.querySelector(".tasks-container");
 let taskValue;
 
+add_task.addEventListener("input", (e) => {
+  taskValue = e.target.value;
+});
+
 create_task.addEventListener("click", () => {
   // popup form
   const form = document.querySelector("form");
   form.style.display = "block";
 
-  add_task.addEventListener("input", (e) => {
-    taskValue = e.target.value;
-  });
-
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    tasks_container.innerHTML += `
-    <div class="task"></div>
+    if (taskValue.length > 0) {
+      form.style.display = "none";
+      tasks_container.innerHTML += `
+      <div class="task">
+        <p>${taskValue}</p>
+        <p>${input_date.value.split("-").reverse().join(" ")}</p>
+      </div>
     `;
+      add_task.value = "";
+      taskValue = "";
+    } else {
+      alert("Veuillez entrer une tâche valide !");
+      tasks_container.innerHTML += "";
+    }
   });
 
   // form hidden

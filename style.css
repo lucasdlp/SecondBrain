@@ -34,6 +34,7 @@ body {
   left: 0;
   top: 0;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.137);
+  background-color: rgba(0, 0, 0, 0.247);
   display: none;
+  z-index: 9999;
 }
