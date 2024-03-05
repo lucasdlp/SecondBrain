@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 20vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+nav .logo {
+  user-select: none;
+}
+
+nav .logo > a > img {
+  height: 60px;
+  user-select: none;
+}

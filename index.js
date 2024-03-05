@@ -55,3 +55,13 @@ create_task.addEventListener("click", () => {
     form.style.display = "none";
   });
 });
+
+// hello or good evening
+
+let localDate = new Date();
+
+if (localDate.getHours() >= 0 || localDate.getHours < 18) {
+  document.querySelector(".welcome").textContent = "Bonjour";
+} else {
+  document.querySelector(".welcome").textContent = "Bonsoir";
+}
