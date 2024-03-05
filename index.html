@@ -13,10 +13,20 @@
           <input
             type="text"
             autocomplete="off"
-            placeholder="Ecrire une tâche"
+            placeholder="Titre"
+            class="title_task"
+          />
+          <input
+            type="text"
+            autocomplete="off"
+            placeholder="Description"
             class="add_task"
           />
           <input id="input_date" type="date" />
+          <button id="priority">
+            <img src="./assets/svg/flag.svg" alt="priority" />
+            <span>Priorité</span>
+          </button>
           <input type="submit" value="Ajouter" />
           <button class="close_form">X</button>
         </form>
