@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/form.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
     <title>Todo List</title>
   </head>
   <body>
@@ -15,10 +16,24 @@
           ><img src="./assets/img/logo.svg" alt="SecondBrain"
         /></a>
       </div>
+      <ul>
+        <li>
+          <img src="./assets/svg/overview.svg" alt="overview" /><button
+            class="nav_link"
+          >
+            Apperçu
+          </button>
+        </li>
+        <li> <img src="./assets/svg/settings.svg" alt="overview" /><button
+          class="nav_link"
+        ><button class="nav_link">Paramètres</button></li>
+      </ul>
+      <div class="nav-bottom"></div>
     </nav>
 
     <main>
       <h2 class="welcome">Bonjour</h2>
+      <h3>Vous avez <span class="tasks-number">0</span> tâches aujourd'hui</h3>
 
       <div class="container">
         <form>
