@@ -35,6 +35,12 @@
       <h2 class="welcome">Bonjour</h2>
       <h3>Vous avez <span class="tasks-number">0</span> tâches aujourd'hui</h3>
 
+      <div class="form-container">
+        <input id="search_task" type="search" placeholder="Rechercher une tâche">
+        <button class="create_task">Ajouter une tâche</button>
+
+      </div>
+
       <div class="container">
         <form>
           <input
@@ -57,8 +63,9 @@
           <input type="submit" value="Ajouter" />
           <button class="close_form">X</button>
         </form>
-        <button class="create_task">+</button>
-        <div class="tasks-container"></div>
+        <div class="tasks-container">
+          <h4>Mes tâches</h4>
+        </div>
       </div>
     </main>
     <script src="index.js"></script>
